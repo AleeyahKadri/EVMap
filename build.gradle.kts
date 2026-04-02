@@ -1,9 +1,10 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
+extra["kotlin_version"] = "1.9.0"
+extra["about_libs_version"] = "8.9.4"
+extra["nav_version"] = "2.7.2"
+
 buildscript {
-    extra["kotlin_version"] = "1.9.0"
-    extra["about_libs_version"] = "8.9.4"
-    extra["nav_version"] = "2.7.2"
     repositories {
         google()
         mavenCentral()
@@ -11,9 +12,9 @@ buildscript {
     }
     dependencies {
         classpath("com.android.tools.build:gradle:8.1.1")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${extra["kotlin_version"]}")
-        classpath("com.mikepenz.aboutlibraries.plugin:aboutlibraries-plugin:${extra["about_libs_version"]}")
-        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:${extra["nav_version"]}")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0")
+        classpath("com.mikepenz.aboutlibraries.plugin:aboutlibraries-plugin:8.9.4")
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.7.2")
         classpath("pt.jcosta.resourceplaceholders:plugin:0.7")
 
         // NOTE: Do not place your application dependencies here; they belong
